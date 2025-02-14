@@ -11,7 +11,7 @@ public:
 	
 	virtual const std::string_view getType() const = 0;
 	virtual const std::string_view getSubtype() const = 0;
-	virtual void playCard() = 0;
+	virtual bool playCard() = 0;
 
 	virtual ~ICard() = 0;
 
@@ -35,7 +35,7 @@ public:
 	virtual const std::string_view getType() const override { return "pokemon"; };
 	 
 	// Plays the card (unfinished)
-	virtual void playCard() = 0;
+	virtual bool playCard() = 0;
 
 	virtual ~IPokemon() = 0;
 
@@ -53,7 +53,7 @@ public:
 	Basic(const std::string name, const std::string setNumber) : IPokemon{name, setNumber} {};
 	
 	virtual const std::string_view getSubtype() const override { return "basic"; };
-	virtual void playCard() {};
+	virtual bool playCard() { return false; };
 
 	virtual ~Basic() = default;
 };
@@ -66,7 +66,7 @@ public:
 	Stage1(const std::string name, const std::string setNumber) : IPokemon{ name, setNumber } {};
 
 	virtual const std::string_view getSubtype() const override { return "stage 1"; };
-	virtual void playCard() {};
+	virtual bool playCard() { return false; };
 
 	virtual ~Stage1() = default;
 };
@@ -79,7 +79,7 @@ public:
 	Stage2(const std::string name, const std::string setNumber) : IPokemon{ name, setNumber } {};
 
 	virtual const std::string_view getSubtype() const override { return "stage 2"; };
-	virtual void playCard() override {};
+	virtual bool playCard() { return false; };
 
 	virtual ~Stage2() = default;
 };
@@ -93,7 +93,7 @@ public:
 	
 	virtual const std::string_view getType() const override { return "item"; };
 	virtual const std::string_view getSubtype() const override { return ""; };
-	virtual void playCard() override {};
+	virtual bool playCard() { return false; };
 
 	virtual ~Item() = default;
 };
@@ -106,7 +106,7 @@ public:
 	Tool(const std::string name, const std::string setNumber) : Item{ name, setNumber } {};
 	
 	virtual const std::string_view getSubtype() const override { return "tool"; };
-	virtual void playCard() override {};
+	virtual bool playCard() { return false; };
 
 	virtual ~Tool() = default;
 };
@@ -120,7 +120,7 @@ public:
 
 	virtual const std::string_view getType() const override { return "supporter"; };
 	virtual const std::string_view getSubtype() const override { return ""; };
-	virtual void playCard() override {};
+	virtual bool playCard() { return false; };
 
 	virtual ~Supporter() = default;
 };
