@@ -12,3 +12,9 @@ Needs to simulate drawing from a deck
 	- Has to keap track of whether requirments specified by the user are sucessful
 	- Shuffling
 	- Deck, Hand, and discard zone
+
+Good to Have
+	- Accept data on and simulate turn order
+	- Accept data on and simulate energy color
+	- HTML interface to make inputing card traits easier
+	- Database of cards
