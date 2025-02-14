@@ -33,7 +33,7 @@ class IPokemon : public ICard
 public:
 	virtual const std::string_view getSubtype() const = 0;
 	virtual const std::string_view getType() const override { return "pokemon"; };
-
+	 
 	// Plays the card (unfinished)
 	virtual void playCard() = 0;
 

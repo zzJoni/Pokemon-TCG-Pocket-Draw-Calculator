@@ -134,6 +134,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="program_structure.md" />
     <None Include="README.md" />
     <None Include="TODO.md" />
   </ItemGroup>

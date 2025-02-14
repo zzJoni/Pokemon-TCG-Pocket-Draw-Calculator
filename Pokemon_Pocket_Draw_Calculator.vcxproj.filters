@@ -25,5 +25,6 @@
   <ItemGroup>
     <None Include="README.md" />
     <None Include="TODO.md" />
+    <None Include="program_structure.md" />
   </ItemGroup>
 </Project>
