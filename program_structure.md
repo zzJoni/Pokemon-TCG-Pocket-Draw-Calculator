@@ -7,7 +7,7 @@ Deck:
 
 	Functions:
 	- Shuffle
-	- Add Card
+	- Add Card (top, bottom, specific slot, and shuffle)
 	- Pop (Draw)
 	- Peek
 	- Get Size

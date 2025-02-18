@@ -27,4 +27,9 @@
     <None Include="TODO.md" />
     <None Include="program_structure.md" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Deck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
