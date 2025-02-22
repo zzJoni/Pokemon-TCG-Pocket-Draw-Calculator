@@ -21,6 +21,9 @@
     <ClCompile Include="CardClasses.h">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="Deck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
